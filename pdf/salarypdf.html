@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<style>
+  table {
+    border-collapse: collapse;
+    margin:0 auto;
+     
+  }
+
+  h1{
+    margin:0;
+    padding:0;
+     
+  }
+</style>
+
+</head>
+
+<body>
+
+  <table width="100%" height="" cellspacing="8" cellpadding="0" border="0">
+    <tbody>
+      <tr>
+        <td colspan="2" align="center">
+          <div style="height: 50px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <div style="font-size: 20px; color: #000000; line-height: 20px; padding-top: 30px; padding-bottom: 0; text-decoration: underline; text-transform: uppercase; margin: 0;">Payslip for the month of August, 2021</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <div style="height: 30px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div style="display: block; padding-bottom: 20px; text-align: left;">
+            <img style="width: 80px;" src="{{logo}}" />
+          </div>
+          
+            <b style="margin: 0;font-weight: 500; padding: 0; text-align: left; text-transform: uppercase; font-size: 20px;">{{name}}</b>
+         
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <div style="height: 30px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          Name: <b>{{employeeName}}</b><br/>
+          Employee ID: <b>{{employeeId}}</b><br/>
+          Designation: <b>{{employeeDesignation}}</b><br/>
+          Department: <b>{{employeeDepartment}}</b><br/>
+          Branch: <b>{{employeeBranch}}</b><br/>
+          Email: <b>{{employeeEmail}}</b>
+        </td>
+        <td align="right">
+          Payslip: <b>{{payslip}}</b><br/>
+          Salary Month: <b>{{month}}</b><br/>
+          Salary Generated: <b>{{generateddatetime}}</b>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <div style="height: 30px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellpadding="5" cellspacing="0" width="100%" style="border: 1px solid #c4c4c4;" bgcolor="#FFF">
+            <tbody>
+              <tr>
+                <td colspan="2" align="center" style="word-break: break-word; text-align: center; font-size: 12px;"><b>Earnings</b></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Basic Salary</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"><b>Rs.{{salary}}</b></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Bonus</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"><b>Rs.{{bonucstotal}}</b></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Total Earnings</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"><b>Rs.{{totalEran}}</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table cellpadding="5" cellspacing="0" width="100%" style="border: 1px solid #c4c4c4;" bgcolor="#FFF">
+            <tbody>
+              <tr>
+                <td colspan="2" align="center" style="word-break: break-word; text-align: center; font-size: 12px;"><b>Deductions</b></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Salary Deduction</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"><b>Rs. {{deduction}}</b></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Fine</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"></td>
+              </tr>
+              <tr>
+                <td width="60%" align="left" style="border-top: 1px solid #c4c4c4; font-size: 12px;">Total Deductions</td>
+                <td width="40%" align="right" style="border-top: 1px solid #c4c4c4; border-left: 1px solid #c4c4c4; font-size: 12px;"><b>Rs. {{totalDeduction}}</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <table cellpadding="10" cellspacing="0" width="100%" style="border: 1px solid #c4c4c4;" bgcolor="#FFF">
+            <tbody>
+              <tr>
+                <td width="100%" align="left" style="border-top: 0 solid #c4c4c4;">
+                  <b style="font-size: 12px;">Total Salary:</b><b style="font-size: 14px;"> {{totalSalary}} </b>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <div style="height: 20px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left">
+          <span style="font-size: 14px; display: inline-block;">Employee Leave Info</span>
+        </td>
+      </tr>
+      <tr>
+        <table cellpadding="5" cellspacing="0" width="100%" style="border: 1px solid #c4c4c4;" bgcolor="#FFF">
+          <tbody>
+            <tr>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Leave Type</td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Leave From</td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Leave to</td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Reason</td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Number of days</td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;">Status</td>
+            </tr>
+            {{leaveinfo}}
+            <tr>
+              <td  colspan="5" align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: Left; font-size: 12px;"><b>Total Leaves</b></td>
+        
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4;text-align: center; font-size: 12px;"><b> {{leaveCount}} </b></td>
+            </tr>
+          </tbody>
+        </table>
+      </tr>
+      <tr>
+        <td align="center">
+          <div style="height: 20px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left">
+          <span style="font-size: 14px; display: inline-block;">Employee Attendence Info</span>
+        </td>
+      </tr>
+      <tr>
+        <table cellpadding="5" cellspacing="0" width="100%" style="border: 1px solid #c4c4c4;" bgcolor="#FFF">
+          <tbody>
+            <tr>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;"><b>Date</b></td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;"><b>Punch Time</b></td>
+              <td  align="center" style="border-top: 1px solid #c4c4c4; border-right: 1px solid #c4c4c4; text-align: center; font-size: 12px;"><b>Total Hours</b></td>
+            </tr>
+            {{attInfo}}
+          </tbody>
+        </table>
+      </tr>
+      
+    </tbody>
+  </table>
+</body>
+
+</html>
